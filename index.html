@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAHMAN X VAI | DIGITAL EXECUTOR STORE</title>
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #05060f; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .glow-purple { box-shadow: 0 0 40px rgba(147, 51, 234, 0.25); }
+        .glow-emerald { box-shadow: 0 0 40px rgba(16, 185, 129, 0.25); }
+        .glow-amber { box-shadow: 0 0 40px rgba(245, 158, 11, 0.25); }
+        .glow-cyan { box-shadow: 0 0 40px rgba(6, 182, 212, 0.25); }
+        .glow-rose { box-shadow: 0 0 40px rgba(244, 63, 94, 0.25); }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #05060f; }
+        ::-webkit-scrollbar-thumb { background: #11132e; border-radius: 10px; }
+        .shimmer-layer {
+            background: linear-gradient(90deg, #090b1e 25%, #16193b 50%, #090b1e 75%);
+            background-size: 200% 100%;
+            animation: loading-shimmer 1.4s infinite linear;
+        }
+        @keyframes loading-shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body class="text-gray-300 min-h-screen flex flex-col justify-between overflow-x-hidden select-none">
+
+    <!-- Global Framework Sync Loader Overlay -->
+    <div id="matrixSystemLoader" class="fixed inset-0 bg-[#05060f] z-50 flex flex-col items-center justify-center transition-all duration-700">
+        <div class="relative w-20 h-20 mb-6">
+            <div class="absolute inset-0 border-4 border-purple-600/20 rounded-full"></div>
+            <div class="absolute inset-0 border-4 border-t-purple-500 rounded-full animate-spin"></div>
+            <div class="absolute inset-3 border-4 border-b-cyan-400 rounded-full animate-spin [animation-direction:reverse]"></div>
+        </div>
+        <h2 class="text-white font-black tracking-widest text-xs uppercase animate-pulse">Establishing Firebase Instance Protocol...</h2>
+        <p class="text-[10px] text-gray-600 mt-2 font-mono">SECURE HANDSHAKE V10.14</p>
+    </div>
+
+    <!-- ========================================== -->
+    <!--          1. PLATFORM SHOP VIEW COMPONENT   -->
+    <!-- ========================================== -->
+    <div id="storeView" class="w-full transition-all duration-300 opacity-100">
+        <!-- Main Utility Header Area -->
+        <header class="bg-[#090b1e]/90 border-b border-purple-900/30 px-4 py-3.5 flex items-center justify-between sticky top-0 z-40 backdrop-blur-md">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600/20 to-indigo-600/20 border border-purple-500/30 flex items-center justify-center shadow-lg shadow-purple-500/5">
+                    <i class="fa-solid fa-bolt text-purple-400 text-lg animate-pulse"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-black tracking-wider text-white uppercase" id="displayStoreName">RAHMAN X VAI</h1>
+                    <p class="text-[9px] text-purple-400 tracking-widest uppercase font-mono">Premium Hub Architecture</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <button onclick="showGatekeeperModal()" class="bg-purple-600/10 text-purple-400 border border-purple-500/20 px-3 py-2 rounded-xl hover:bg-purple-600 hover:text-white transition duration-300 flex items-center space-x-1 cursor-pointer">
+                    <i class="fa-solid fa-user-shield text-xs"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-wider hidden sm:inline">Console</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Dynamic Notice Infrastructure Ticker -->
+        <div class="bg-[#03040a] border-b border-slate-900/40 py-2 px-4 overflow-hidden">
+            <div class="max-w-3xl mx-auto flex items-center space-x-3 text-xs">
+                <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded shadow">LIVE</div>
+                <marquee class="text-gray-400 font-medium" id="displayNotice" scrollamount="4">Synchronizing digital assets matrix data maps via cloud registry nodes...</marquee>
+            </div>
+        </div>
+
+        <!-- Premium Showcase Hero Layout Matrix -->
+        <div class="p-4 max-w-3xl mx-auto">
+            <div class="w-full rounded-2xl overflow-hidden border border-purple-600/20 glow-purple relative bg-[#090b1e] min-h-44 flex flex-col justify-center items-center text-center p-6">
+                <div class="absolute inset-0 bg-gradient-to-tr from-purple-950/20 via-slate-950/90 to-cyan-950/20 opacity-90"></div>
+                <div class="z-10 space-y-2">
+                    <span class="text-[9px] font-mono tracking-widest text-cyan-400 bg-cyan-950/40 border border-cyan-800/30 px-2 py-0.5 rounded-full uppercase">Matrix Layer Eng Enabled</span>
+                    <h2 class="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 tracking-wide uppercase" id="displayBannerTitle">RAHMAN X VAI STORE</h2>
+                    <p class="text-xs text-purple-300 tracking-widest uppercase max-w-sm mx-auto font-medium" id="displayBannerDesc">PREMIUM INJECTOR & GAMING VIP PANELS</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catalog Dynamic Segment View -->
+        <main class="px-4 max-w-3xl mx-auto mt-2">
+            <div class="flex items-center justify-between border-b border-slate-900/60 pb-3 mb-6">
+                <h3 class="text-xs font-black tracking-widest text-purple-400 uppercase flex items-center space-x-2">
+                    <i class="fa-solid fa-layer-group text-xs"></i> 
+                    <span id="displayCategory">VIP MOD PANELS</span>
+                </h3>
+                <span class="text-[10px] text-gray-500 font-mono font-bold uppercase" id="itemCounterLabel">0 Packages Active</span>
+            </div>
+
+            <!-- Dynamic Product Stream Framework Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Fallback Initial Shimmers skeleton outputs -->
+                <div class="shimmer-layer h-60 rounded-2xl border border-slate-900"></div>
+                <div class="shimmer-layer h-60 rounded-2xl border border-slate-900"></div>
+            </div>
+
+            <!-- Perks Metrics Core Blocks -->
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div class="bg-[#090b1e]/40 p-4 rounded-xl border border-slate-900 flex items-start space-x-3">
+                    <div class="p-2 bg-purple-500/10 rounded-lg text-purple-400"><i class="fa-solid fa-circle-check"></i></div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white uppercase tracking-wide">Anti-Ban Bypass</h4>
+                        <p class="text-[11px] text-gray-500 mt-0.5">Fully optimized execution structures embedded layers.</p>
+                    </div>
+                </div>
+                <div class="bg-[#090b1e]/40 p-4 rounded-xl border border-slate-900 flex items-start space-x-3">
+                    <div class="p-2 bg-emerald-500/10 rounded-lg text-emerald-400"><i class="fa-solid fa-headset"></i></div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white uppercase tracking-wide">Direct Contact</h4>
+                        <p class="text-[11px] text-gray-500 mt-0.5">Secure personal operational support availability.</p>
+                    </div>
+                </div>
+                <div class="bg-[#090b1e]/40 p-4 rounded-xl border border-slate-900 flex items-start space-x-3">
+                    <div class="p-2 bg-cyan-500/10 rounded-lg text-cyan-400"><i class="fa-solid fa-bolt"></i></div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white uppercase tracking-wide">Instant Provision</h4>
+                        <p class="text-[11px] text-gray-500 mt-0.5">Real-time validation credentials matching speed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Matrix Redirection Footers Buttons -->
+            <div class="flex justify-center space-x-4 mt-12 mb-8">
+                <a id="lnkTiktok" href="#" target="_blank" class="w-10 h-10 rounded-xl bg-[#090b1e] border border-slate-900 flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/50 transition duration-300"><i class="fa-brands fa-tiktok"></i></a>
+                <a id="lnkFacebook" href="#" target="_blank" class="w-10 h-10 rounded-xl bg-[#090b1e] border border-slate-900 flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/50 transition duration-300"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                <a id="lnkSummaryWhatsapp" href="https://wa.me/8801792016636" target="_blank" class="w-10 h-10 rounded-xl bg-[#090b1e] border border-slate-900 flex items-center justify-center text-gray-400 hover:text-white hover:border-emerald-500/50 transition duration-300"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                <a id="lnkSummaryTelegram" href="https://t.me/Rahman532" target="_blank" class="w-10 h-10 rounded-xl bg-[#090b1e] border border-slate-900 flex items-center justify-center text-gray-400 hover:text-white hover:border-sky-500/50 transition duration-300"><i class="fa-brands fa-telegram text-lg"></i></a>
+            </div>
+        </main>
+    </div>
+
+    <!-- ========================================== -->
+    <!--          2. CENTRAL ADMIN SECURITY PANEL   -->
+    <!-- ========================================== -->
+    <div id="adminView" class="w-full hidden opacity-0 transition-all duration-300">
+        <header class="bg-[#0b0d26] border-b border-emerald-900/30 px-4 py-3.5 flex items-center justify-between sticky top-0 z-40">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center">
+                    <i class="fa-solid fa-circle-nodes text-emerald-400 text-sm"></i>
+                </div>
+                <h1 class="text-sm font-black tracking-wider text-white uppercase">RAHMAN CORE NODE DASHBOARD</h1>
+            </div>
+            <button onclick="collapseAdminDashboard()" class="bg-rose-600/10 text-rose-400 border border-rose-500/20 px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-rose-600 hover:text-white transition cursor-pointer">
+                <i class="fa-solid fa-power-off mr-1"></i> Disconnect Console
+            </button>
+        </header>
+
+        <main class="p-4 max-w-4xl mx-auto space-y-6">
+            <!-- Sync Notification Banner -->
+            <div class="bg-emerald-950/10 border border-emerald-500/20 rounded-xl p-3 flex items-center justify-between text-[11px] text-emerald-400 font-mono">
+                <div class="flex items-center space-x-2">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full animate-ping"></span>
+                    <span>Firebase Stream Core Socket Pipeline Synchronized Live</span>
+                </div>
+                <span class="text-gray-600 hidden sm:inline">Firestore Data Array Node</span>
+            </div>
+
+            <!-- Global Configurations Model Form Layout -->
+            <section class="bg-[#090b1e] border border-slate-900 rounded-2xl p-5 space-y-4">
+                <h3 class="text-xs font-black text-emerald-400 border-b border-slate-900 pb-2 uppercase tracking-widest"><i class="fa-solid fa-sliders mr-2"></i>Global Engine Parameters Meta Configuration</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Store Brand Title Text</label>
+                        <input type="text" id="cfgStoreName" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white font-medium focus:outline-none focus:border-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Main Category Display Section Header</label>
+                        <input type="text" id="cfgCategory" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white font-medium focus:outline-none focus:border-emerald-500">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Live Notice Board Announcement Ticker String</label>
+                        <input type="text" id="cfgNotice" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white font-medium focus:outline-none focus:border-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Hero Promo Big Headline Title</label>
+                        <input type="text" id="cfgBannerTitle" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white font-medium focus:outline-none focus:border-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Hero Banner Specs Subtitle Feature Text</label>
+                        <input type="text" id="cfgBannerDesc" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white font-medium focus:outline-none focus:border-emerald-500">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Redirect Paths Management Group Box -->
+            <section class="bg-[#090b1e] border border-slate-900 rounded-2xl p-5 space-y-4">
+                <h3 class="text-xs font-black text-emerald-400 border-b border-slate-900 pb-2 uppercase tracking-widest"><i class="fa-solid fa-link mr-2"></i>Social Hyperlinks Redirection Core Routing Channels</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">WhatsApp Core Action Link Target Handle URL</label>
+                        <input type="text" id="cfgPathResultWhatsapp" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Telegram Main Channel Redirect Protocol Target URL</label>
+                        <input type="text" id="cfgPathResultTelegram" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">TikTok Channel Profiling Absolute Link</label>
+                        <input type="text" id="cfgPathResultTiktok" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Facebook Target Direct Community Anchor Link</label>
+                        <input type="text" id="cfgPathResultFacebook" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <button onclick="executeGlobalSystemSettingsPush()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-black py-3 rounded-xl text-xs uppercase tracking-widest transition cursor-pointer">
+                        <i class="fa-solid fa-circle-up mr-1"></i> Push Global Architecture Data Matrix Configuration
+                    </button>
+                </div>
+            </section>
+
+            <!-- Product Payload Processing Matrix Engine Framework Forms -->
+            <section class="bg-[#090b1e] border border-slate-900 rounded-2xl p-5 space-y-4">
+                <h3 class="text-xs font-black text-emerald-400 border-b border-slate-900 pb-2 uppercase tracking-widest"><i class="fa-solid fa-square-plus mr-2"></i>Product Object Registry Mapping Control Module</h3>
+                <form id="catalogItemProcessingForm" onsubmit="handleItemCommitDispatchPipeline(event)" class="space-y-4">
+                    <input type="hidden" id="formHiddenInstanceFirebaseID" value="">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Client Product Token / Brand Name String</label>
+                            <input type="text" id="formItemName" required placeholder="e.g., PREMIUM ESP PANEL VIP" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Base Structural Cost Calculation Basis Price (৳)</label>
+                            <input type="number" id="formItemPrice" required placeholder="e.g., 200" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Short Description Feature Info Grid Details</label>
+                            <input type="text" id="formItemDesc" required placeholder="High density execution automated code logic structures descriptor text..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Feature Badges Tag Mapping Strings (Comma Separated)</label>
+                            <input type="text" id="formItemTags" placeholder="auto-aim, custom, safe, 64bit" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Visual Panel Aesthetic Glow Theme Variant Preset</label>
+                            <select id="formItemTheme" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                                <option value="purple">Standard Deep Cosmic Purple</option>
+                                <option value="emerald">Emerald Biohazard Dynamic Green</option>
+                                <option value="amber">Amber Cyber Punk Gold</option>
+                                <option value="cyan">Cyan Digital Neon Blue</option>
+                                <option value="rose">Rose Core Radioactive Crimson Red</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex space-x-2 pt-2">
+                        <button type="submit" id="formSubmitProcessingButton" class="flex-1 bg-purple-600 hover:bg-purple-500 text-white font-bold py-3 rounded-xl text-xs uppercase tracking-wider transition cursor-pointer">Commit Dynamic Product To Firestore Array</button>
+                        <button type="button" onclick="clearCatalogItemProcessingForm()" class="bg-slate-900 border border-slate-800 text-gray-500 px-4 rounded-xl text-xs hover:text-white transition cursor-pointer">Reset Fields</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Grid Dynamic Inventory Management Controls List Tables -->
+            <section class="bg-[#090b1e] border border-slate-900 rounded-2xl p-5 space-y-4">
+                <h3 class="text-xs font-black text-emerald-400 border-b border-slate-900 pb-2 uppercase tracking-widest"><i class="fa-solid fa-list-check mr-2"></i>Live Registered Inventory Objects System Table Data Stream</h3>
+                <div class="overflow-x-auto w-full">
+                    <table class="w-full text-left text-xs border-collapse font-medium">
+                        <thead>
+                            <tr class="border-b border-slate-900 text-gray-500 font-bold uppercase tracking-wider">
+                                <th class="py-3 px-2">Registered Asset Identifier</th>
+                                <th class="py-3 px-2">Base Cost Sum</th>
+                                <th class="py-3 px-2">Theme Mapping Glow</th>
+                                <th class="py-3 px-2 text-right">Operational Actions Matrix</th>
+                            </tr>
+                        </thead>
+                        <tbody id="adminInventoryTableRenderBlock">
+                            <!-- Populated in real-time loops arrays -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Persistent Global System Footer Line -->
+    <footer class="mt-auto border-t border-slate-950 py-4 text-center bg-[#05060f]">
+        <p class="text-[9px] text-gray-600 font-mono tracking-widest">&copy; 2026 RAHMAN X VAI CORE CONTROL PLATFORM INTERFACES. DISPATCH ENGINE INTEGRATED SECURITY GATEWAY LAYERS.</p>
+    </footer>
+
+
+    <!-- ========================================== -->
+    <!--          3. COMPONENT PORTAL MODALS        -->
+    <!-- ========================================== -->
+
+    <!-- Admin Authentication Gatekeeper Modal -->
+    <div id="authGatekeeperModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden items-center justify-center p-4 transition-all duration-300">
+        <div class="bg-[#0b0d26] w-full max-w-sm rounded-2xl border border-slate-800 p-6 relative shadow-2xl">
+            <button onclick="hideGatekeeperModal()" class="absolute top-4 right-4 text-gray-500 hover:text-white cursor-pointer"><i class="fa-solid fa-times text-sm"></i></button>
+            <div class="text-center mb-6">
+                <div class="w-11 h-11 bg-purple-600/10 text-purple-400 rounded-full flex items-center justify-center mx-auto mb-2 border border-purple-500/20">
+                    <i class="fa-solid fa-fingerprint text-lg"></i>
+                </div>
+                <h3 class="text-white font-black text-xs uppercase tracking-wider">Gatekeeper Security Authorization Portal</h3>
+                <p class="text-[10px] text-gray-500 mt-1 font-mono">Input administrative encryption matrix code</p>
+            </div>
+            <div class="space-y-3">
+                <input type="password" id="fieldPasskeyInput" placeholder="Enter System Admin Security Token..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white font-mono tracking-widest text-center focus:outline-none focus:border-purple-500">
+                <button onclick="validateSecurityGatekeeperCredentials()" class="w-full bg-purple-600 hover:bg-purple-500 text-white text-xs font-black py-3 rounded-xl uppercase tracking-widest transition cursor-pointer">Verify Matrix Credentials</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Multi-Step Checkout Framework Processing Flow Component Modals (Like Chaldal/SellsBazar Layouts) -->
+    <div id="purchaseModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm hidden items-center justify-center p-4 transition-all duration-300">
+        <div class="bg-[#090b1e] w-full max-w-sm rounded-2xl border border-purple-950/30 p-6 relative glow-purple">
+            <button onclick="closeOrderCheckoutModalPopup()" class="absolute top-4 right-4 text-gray-500 hover:text-white cursor-pointer"><i class="fa-solid fa-xmark text-base"></i></button>
+            
+            <div class="flex items-center space-x-2 text-purple-400 font-bold mb-4">
+                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                <span id="chkProductTitle" class="uppercase tracking-wide text-xs text-white font-black">INITIALIZING CONFIGURATION INSTANCE</span>
+            </div>
+
+            <!-- Visual Progress Step Graph Indicator nodes -->
+            <div class="flex items-center justify-center space-x-4 mb-6">
+                <div id="stepProgressCircleNode1" class="w-7 h-7 rounded-full bg-purple-600 text-white font-black flex items-center justify-center text-xs">1</div>
+                <div id="stepLineConnectorLayout" class="h-0.5 w-14 bg-slate-900 transition-all duration-300"></div>
+                <div id="stepProgressCircleNode2" class="w-7 h-7 rounded-full bg-slate-900 text-gray-500 font-black flex items-center justify-center text-xs">2</div>
+            </div>
+
+            <!-- VIEW BLOCK 1: VARIANT MODES CONFIGURATION TERM SELECTOR & QUANTITY -->
+            <div id="checkoutStepViewSection1" class="space-y-4">
+                <div>
+                    <label class="block text-[10px] font-black text-gray-400 mb-1.5 uppercase tracking-wider">License Key Validation Terms</label>
+                    <select id="selectDurationVariantDropdown" onchange="executeRealTimeCheckoutPriceCalculation()" class="w-full bg-slate-950 border border-slate-900 rounded-xl px-3 py-3 text-xs text-white font-semibold focus:outline-none focus:border-purple-500">
+                        <!-- Options injected in real-time script context loops parameters -->
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black text-gray-400 mb-1.5 uppercase tracking-wider">License Access instances Token Quantities Allocation</label>
+                    <div class="flex items-center bg-slate-950 border border-slate-900 rounded-xl px-3 py-2 w-36 justify-between shadow-inner">
+                        <button onclick="mutateQuantityAdjustmentCounterValue(-1)" class="text-gray-400 hover:text-white px-2 font-black text-base cursor-pointer">-</button>
+                        <span id="labelQuantityCounterDisplay" class="text-xs font-mono font-black text-white">1</span>
+                        <button onclick="mutateQuantityAdjustmentCounterValue(1)" class="text-gray-400 hover:text-white px-2 font-black text-base cursor-pointer">+</button>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-950/70 rounded-xl p-3 border border-slate-900/60 text-xs flex justify-between items-center font-mono">
+                    <span class="text-gray-500 font-bold uppercase text-[10px]">Total Cumulative Sum Value:</span>
+                    <span class="text-emerald-400 font-black text-sm" id="checkoutCalculatedTotalSumLabel">৳0</span>
+                </div>
+
+                <button onclick="advanceToGatewayStepSection2()" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black py-3 rounded-xl mt-2 transition cursor-pointer flex items-center justify-center space-x-2 text-xs uppercase tracking-widest">
+                    <span>Proceed to Gateway Verification</span> <i class="fa-solid fa-angle-right text-xs"></i>
+                </button>
+            </div>
+
+            <!-- VIEW BLOCK 2: FINAL ROUTING LINK DESTINATION & DOMESTIC INSTANT INJECT API -->
+            <div id="checkoutStepViewSection2" class="hidden space-y-4">
+                <p class="text-center text-[10px] text-gray-500 font-black uppercase tracking-widest">Select Operational Direct Access Channel Connection</p>
+                <div class="grid grid-cols-2 gap-3">
+                    <a id="intentGatewayLinkWhatsapp" href="#" target="_blank" class="bg-emerald-600/10 border border-emerald-500/20 text-emerald-400 hover:bg-emerald-600 hover:text-white transition font-black p-4 rounded-xl text-center flex flex-col items-center justify-center space-y-1">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span class="text-[9px] tracking-widest uppercase">WhatsApp Direct</span>
+                    </a>
+                    <a id="intentGatewayLinkTelegram" href="#" target="_blank" class="bg-sky-500/10 border border-sky-500/20 text-sky-400 hover:bg-sky-500 hover:text-white transition font-black p-4 rounded-xl text-center flex flex-col items-center justify-center space-y-1">
+                        <i class="fa-brands fa-telegram text-xl"></i>
+                        <span class="text-[9px] tracking-widest uppercase">Telegram Direct</span>
+                    </a>
+                </div>
+                
+                <div class="relative py-2 flex items-center justify-center">
+                    <span class="absolute left-0 right-0 h-px bg-slate-900"></span>
+                    <span class="relative bg-[#090b1e] px-3 text-[9px] font-bold text-gray-600 uppercase tracking-widest">Instant API Automated Processors</span>
+                </div>
+
+                <button onclick="triggerBkashExecutionPaymentAlertToast()" class="w-full bg-gradient-to-r from-pink-600 to-rose-600 text-white font-black py-3 rounded-xl transition cursor-pointer flex items-center justify-center space-x-2 text-xs tracking-widest uppercase shadow-lg shadow-pink-600/20">
+                    <i class="fa-solid fa-wallet text-xs"></i>
+                    <span>বিকাশ ইনস্ট্যান্ট অটোমেটেড পেমেন্ট</span>
+                </button>
+                <button onclick="revertToConfigurationStepSection1()" class="w-full bg-slate-900 text-gray-500 font-bold py-2 rounded-xl mt-1 text-[9px] hover:text-white transition cursor-pointer uppercase tracking-widest">Modify Term Selections</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!--    4. FIREBASE ENGINE REVOLUTIONARY IMPLEMENTATION -->
+    <!-- ========================================== -->
+    <script type="module">
+        // Firebase ES6 modular infrastructure loaders components 
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+        import { 
+            getFirestore, doc, setDoc, getDoc, onSnapshot, collection, addDoc, updateDoc, deleteDoc 
+        } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
+
+        // ⚠️ আপনার নিজস্ব ফায়ারবেস কনসোলের ক্রেডেনশিয়ালস (Firebase Project Settings) নিচে ইনপুট করুন:
+        const firebaseConfig = {
+  apiKey: "AIzaSyD2NL773QjNETNTjsZsdKV9Zty_d5S2UPM",
+  authDomain: "like-sall.firebaseapp.com",
+  databaseURL: "https://like-sall-default-rtdb.firebaseio.com",
+  projectId: "like-sall",
+  storageBucket: "like-sall.firebasestorage.app",
+  messagingSenderId: "646509804289",
+  appId: "1:646509804289:web:ad885096d869f74724b900",
+  measurementId: "G-WQE4J4199Z"
+};
+
+        // Initialize Operational Software Instance Model Token Framework
+        const firebaseCoreApplicationNode = initializeApp(firebaseConfig);
+        const cloudFirestoreDatabaseEngine = getFirestore(firebaseCoreApplicationNode);
+
+        // Core Tracking Application States Memory Structures Array
+        let operationalGlobalMemoryStateObject = {
+            brandName: "RAHMAN X VAI",
+            catalogSectionHeader: "VIP MOD PANELS",
+            tickerAnnouncementNotice: "Welcome to RAHMAN X VAI Premium Store. System synchronized via live database.",
+            heroBannerHeaderTitle: "RAHMAN X VAI STORE",
+            heroBannerFeatureDesc: "PREMIUM INJECTOR & GAMING VIP PANELS",
+            hyperlinkWhatsapp: "https://wa.me/8801792016636",
+            hyperlinkTelegram: "https://t.me/Rahman532",
+            hyperlinkTiktok: "#",
+            hyperlinkFacebook: "#"
+        };
+
+        let activeTrackedProductItemsArray = [];
+        let currentlySelectedProductDataNodeReference = null;
+        let checkoutOperationalActiveQuantityIndexCounter = 1;
+        const systemConsoleGatewayProtectionSecurityKeyToken = "admin123"; // আপনার অ্যাডমিন কনসোলের পাসওয়ার্ড
+
+        // Global Event Handlers Export Routing Channels (Needed for inline HTML elements parsing triggers)
+        window.showGatekeeperModal = showGatekeeperModal;
+        window.hideGatekeeperModal = hideGatekeeperModal;
+        window.validateSecurityGatekeeperCredentials = validateSecurityGatekeeperCredentials;
+        window.collapseAdminDashboard = collapseAdminDashboard;
+        window.executeGlobalSystemSettingsPush = executeGlobalSystemSettingsPush;
+        window.handleItemCommitDispatchPipeline = handleItemCommitDispatchPipeline;
+        window.clearCatalogItemProcessingForm = clearCatalogItemProcessingForm;
+        window.loadTargetProductInstanceToFormForMutation = loadTargetProductInstanceToFormForMutation;
+        window.triggerTargetProductInstanceDeletionFromCloud = triggerTargetProductInstanceDeletionFromCloud;
+        window.displayTargetItemFeatureMicroAlertToast = displayTargetItemFeatureMicroAlertToast;
+        window.initializeTargetProductOrderCheckoutSequence = initializeTargetProductOrderCheckoutSequence;
+        window.closeOrderCheckoutModalPopup = closeOrderCheckoutModalPopup;
+        window.mutateQuantityAdjustmentCounterValue = mutateQuantityAdjustmentCounterValue;
+        window.executeRealTimeCheckoutPriceCalculation = executeRealTimeCheckoutPriceCalculation;
+        window.advanceToGatewayStepSection2 = advanceToGatewayStepSection2;
+        window.revertToConfigurationStepSection1 = revertToConfigurationStepSection1;
+        window.triggerBkashExecutionPaymentAlertToast = triggerBkashExecutionPaymentAlertToast;
+
+        // Life Cycle Pipeline Framework Event Execution Triggers
+        window.addEventListener('DOMContentLoaded', () => {
+            initializeRealTimeCloudSynchronizerPipeline();
+        });
+
+        // ===================================================
+        // FIREBASE FIRESTORE LIVE REAL-TIME STREAM LISTENERS
+        // ===================================================
+        function initializeRealTimeCloudSynchronizerPipeline() {
+            // Node 1: Global Platform Variable Settings Structural Listeners Doc
+            const targetGlobalSettingsDocPointerReference = doc(cloudFirestoreDatabaseEngine, "systemControlLayer", "globalConfigs");
+            
+            onSnapshot(targetGlobalSettingsDocPointerReference, (documentSnapshotPacket) => {
+                if(documentSnapshotPacket.exists()) {
+                    operationalGlobalMemoryStateObject = documentSnapshotPacket.data();
+                } else {
+                    // Seed fallback layout schemas configuration initialization context inside database if item does not exist
+                    setDoc(targetGlobalSettingsDocPointerReference, operationalGlobalMemoryStateObject);
+                }
+                synchronizeStateModelPropertiesWithDOM();
+            }, (errorLog) => {
+                console.error("Firebase Sync Channel Fault Node 1:", errorLog);
+                synchronizeStateModelPropertiesWithDOM(); // Fallback loading safe states runtime
+            });
+
+            // Node 2: Products Database Records Collections List Streaming Listener Channels
+            const targetProductsCollectionReferenceNode = collection(cloudFirestoreDatabaseEngine, "registeredProductsCatalog");
+            
+            onSnapshot(targetProductsCollectionReferenceNode, (querySnapshotCollection) => {
+                activeTrackedProductItemsArray = [];
+                querySnapshotCollection.forEach((itemDocNode) => {
+                    let extractedDataPayload = itemDocNode.data();
+                    extractedDataPayload.firebaseDocumentUniqueKey = itemDocNode.id;
+                    activeTrackedProductItemsArray.push(extractedDataPayload);
+                });
+                
+                compileProductsDataGridToUserInterface();
+                
+                // Hide boot shimmer loader masks upon initialization handshakes complete matching bounds
+                setTimeout(() => {
+                    document.getElementById('matrixSystemLoader').classList.add('opacity-0', 'pointer-events-none');
+                }, 500);
+            }, (errorLog) => {
+                console.error("Firebase Sync Collection Channel Fault Node 2:", errorLog);
+                document.getElementById('matrixSystemLoader').classList.add('opacity-0', 'pointer-events-none');
+            });
+        }
+
+        // DOM Synchronization Engines Mappings Framework UI
+        function synchronizeStateModelPropertiesWithDOM() {
+            document.getElementById('displayStoreName').innerText = operationalGlobalMemoryStateObject.brandName;
+            document.getElementById('displayCategory').innerText = operationalGlobalMemoryStateObject.catalogSectionHeader;
+            document.getElementById('displayNotice').innerText = operationalGlobalMemoryStateObject.tickerAnnouncementNotice;
+            document.getElementById('displayBannerTitle').innerText = operationalGlobalMemoryStateObject.heroBannerHeaderTitle;
+            document.getElementById('displayBannerDesc').innerText = operationalGlobalMemoryStateObject.heroBannerFeatureDesc;
+
+            document.getElementById('lnkTiktok').href = operationalGlobalMemoryStateObject.hyperlinkTiktok;
+            document.getElementById('lnkFacebook').href = operationalGlobalMemoryStateObject.hyperlinkFacebook;
+            document.getElementById('lnkSummaryWhatsapp').href = operationalGlobalMemoryStateObject.hyperlinkWhatsapp;
+            document.getElementById('lnkSummaryTelegram').href = operationalGlobalMemoryStateObject.hyperlinkTelegram;
+        }
+
+        function compileProductsDataGridToUserInterface() {
+            const gridContainerElementBox = document.getElementById('productsGrid');
+            document.getElementById('itemCounterLabel').innerText = `${activeTrackedProductItemsArray.length} Packages Active`;
+            
+            gridContainerElementBox.innerHTML = '';
+
+            if(activeTrackedProductItemsArray.length === 0) {
+                gridContainerElementBox.innerHTML = `
+                    <div class="col-span-full text-center py-12 px-4 border border-dashed border-slate-900 rounded-2xl bg-[#090b1e]/10">
+                        <i class="fa-solid fa-box-open block text-2xl text-purple-950 mb-3"></i>
+                        <p class="text-xs text-gray-500 font-bold uppercase tracking-widest">No Active Packages Loaded inside Firestore Registry Node</p>
+                    </div>
+                `;
+                return;
+            }
+
+            activeTrackedProductItemsArray.forEach((itemObjectNode, computationalIndexValue) => {
+                let badgeTextHex = "text-purple-400";
+                let badgeContainerMarkupStyles = "bg-purple-500/10 text-purple-400 border-purple-500/20";
+                let internalBoxGradientScheme = "from-purple-950/10 to-slate-950";
+                let visualGlowWrapperPreset = "glow-purple";
+
+                if (itemObjectNode.theme === 'emerald') {
+                    badgeTextHex = "text-emerald-400"; badgeContainerMarkupStyles = "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"; internalBoxGradientScheme = "from-emerald-950/10 to-slate-950"; visualGlowWrapperPreset = "glow-emerald";
+                } else if (itemObjectNode.theme === 'amber') {
+                    badgeTextHex = "text-amber-400"; badgeContainerMarkupStyles = "bg-amber-500/10 text-amber-400 border-amber-500/20"; internalBoxGradientScheme = "from-amber-950/10 to-slate-950"; visualGlowWrapperPreset = "glow-amber";
+                } else if (itemObjectNode.theme === 'cyan') {
+                    badgeTextHex = "text-cyan-400"; badgeContainerMarkupStyles = "bg-cyan-500/10 text-cyan-400 border-cyan-500/20"; internalBoxGradientScheme = "from-cyan-950/10 to-slate-950"; visualGlowWrapperPreset = "glow-cyan";
+                } else if (itemObjectNode.theme === 'rose') {
+                    badgeTextHex = "text-rose-400"; badgeContainerMarkupStyles = "bg-rose-500/10 text-rose-400 border-rose-500/20"; internalBoxGradientScheme = "from-rose-950/10 to-slate-950"; visualGlowWrapperPreset = "glow-rose";
+                }
+
+                let generatedTagsSlicesSplitListMarkup = itemObjectNode.tags ? itemObjectNode.tags.split(',').map(elementTag => `<span class="bg-[#03040a] border border-slate-900 text-gray-500 text-[8px] px-2 py-0.5 rounded font-mono font-bold uppercase tracking-wider">${elementTag.trim()}</span>`).join('') : '';
+
+                gridContainerElementBox.innerHTML += `
+                    <div class="bg-[#090b1e] border border-slate-900 rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 hover:border-slate-800/80 hover:${visualGlowWrapperPreset}">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-2 ${badgeTextHex} font-black text-xs tracking-wider uppercase">
+                                    <i class="fa-solid fa-gamepad text-sm animate-pulse"></i>
+                                    <span>${itemObjectNode.name}</span>
+                                </div>
+                                <span class="text-[8px] font-black tracking-widest uppercase px-2 py-0.5 rounded-full border ${badgeContainerMarkupStyles}">✓ Active</span>
+                            </div>
+                            <div class="w-full h-24 bg-gradient-to-br ${internalBoxGradientScheme} rounded-xl mb-3 flex flex-col items-center justify-center border border-slate-900/40 p-3">
+                                <span class="${badgeTextHex} font-black text-sm tracking-widest font-mono text-center truncate w-full">${itemObjectNode.name}</span>
+                                <span class="text-[8px] text-gray-600 font-mono tracking-widest mt-1 uppercase">RAHMAN SECURE MATRIX LAYER</span>
+                            </div>
+                            <p class="text-[11px] text-gray-400 leading-relaxed mb-3 min-h-8 font-medium">${itemObjectNode.desc}</p>
+                            <div class="flex flex-wrap gap-1 mb-4">${generatedTagsSlicesSplitListMarkup}</div>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-gray-500 mb-2 font-bold uppercase tracking-wide">Variant Price From <span class="text-emerald-400 font-black text-base pl-0.5 font-mono">৳${itemObjectNode.basePrice}</span></div>
+                            <div class="grid grid-cols-4 gap-2">
+                                <button onclick="displayTargetItemFeatureMicroAlertToast('${itemObjectNode.name}')" class="bg-purple-600/10 text-purple-400 border border-purple-500/20 rounded-xl py-2.5 text-center cursor-pointer hover:bg-purple-600 hover:text-white transition duration-300"><i class="fa-solid fa-circle-info text-xs"></i></button>
+                                <button onclick="initializeTargetProductOrderCheckoutSequence(${computationalIndexValue})" class="col-span-3 bg-purple-600 hover:bg-purple-500 text-white font-black rounded-xl py-2.5 text-xs tracking-widest uppercase transition cursor-pointer shadow-md shadow-purple-600/10">Buy Configuration</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Re-render table components inside admin framework workspace data view lines if dashboard area container visible
+            if(!document.getElementById('adminView').classList.contains('hidden')) {
+                compileAdminInventoryTableDataRows();
+            }
+        }
+
+        function displayTargetItemFeatureMicroAlertToast(nameStringParam) {
+            alert(`[System Identity Token Validation Passed]\nAsset: ${nameStringParam}\n\nSecurity Status: Bypass Protocol Validated and Safe. Select 'Buy Configuration' to construct multi-step communication tokens.`);
+        }
+
+        // ===================================================
+        // MULTI-STEP ORDER PROCESSING LOGIC (LIKE CHALDAL CHANNELS)
+        // ===================================================
+        function initializeTargetProductOrderCheckoutSequence(indexParameterIDKey) {
+            currentlySelectedProductDataNodeReference = activeTrackedProductItemsArray[indexParameterIDKey];
+            checkoutOperationalActiveQuantityIndexCounter = 1;
+            
+            document.getElementById('chkProductTitle').innerText = currentlySelectedProductDataNodeReference.name;
+            document.getElementById('labelQuantityCounterDisplay').innerText = checkoutOperationalActiveQuantityIndexCounter;
+            
+            const standardBasisCost = currentlySelectedProductDataNodeReference.basePrice;
+            const dropdownSelectNode = document.getElementById('selectDurationVariantDropdown');
+            
+            dropdownSelectNode.innerHTML = `
+                <option value="${standardBasisCost}" data-term="1 DAY EXECUTOR TOKEN" selected>1 DAY VALIDATION TERM — ৳${standardBasisCost}</option>
+                <option value="${Math.round(standardBasisCost * 2.85)}" data-term="3 DAYS SECURITY LICENSE">3 DAYS STRETCH REPOSITORY — ৳${Math.round(standardBasisCost * 2.85)}</option>
+                <option value="${Math.round(standardBasisCost * 4.25)}" data-term="7 DAYS PRESTIGE PACK">7 DAYS INFRASTRUCTURE PACK — ৳${Math.round(standardBasisCost * 4.25)}</option>
+                <option value="${Math.round(standardBasisCost * 6.42)}" data-term="15 DAYS AUTOMATION KEY">15 DAYS MASTER EXECUTOR CONTROL — ৳${Math.round(standardBasisCost * 6.42)}</option>
+                <option value="${Math.round(standardBasisCost * 9.27)}" data-term="30 DAYS ELITE MATRIX VENDOR">30 DAYS UNLIMITED PLATINUM CORE — ৳${Math.round(standardBasisCost * 9.27)}</option>
+            `;
+
+            executeRealTimeCheckoutPriceCalculation();
+            document.getElementById('purchaseModal').style.display = 'flex';
+            revertToConfigurationStepSection1();
+        }
+
+        function closeOrderCheckoutModalPopup() {
+            document.getElementById('purchaseModal').style.display = 'none';
+        }
+
+        function mutateQuantityAdjustmentCounterValue(adderValueCoefficient) {
+            checkoutOperationalActiveQuantityIndexCounter += adderValueCoefficient;
+            if(checkoutOperationalActiveQuantityIndexCounter < 1) checkoutOperationalActiveQuantityIndexCounter = 1;
+            document.getElementById('labelQuantityCounterDisplay').innerText = checkoutOperationalActiveQuantityIndexCounter;
+            executeRealTimeCheckoutPriceCalculation();
+        }
+
+        function executeRealTimeCheckoutPriceCalculation() {
+            const chosenOptionBaseValue = parseInt(document.getElementById('selectDurationVariantDropdown').value);
+            const netAggregateSumResultValue = chosenOptionBaseValue * checkoutOperationalActiveQuantityIndexCounter;
+            document.getElementById('checkoutCalculatedTotalSumLabel').innerText = "৳" + netAggregateSumResultValue;
+        }
+
+        function advanceToGatewayStepSection2() {
+            document.getElementById('checkoutStepViewSection1').classList.add('hidden');
+            document.getElementById('checkoutStepViewSection2').classList.remove('hidden');
+            document.getElementById('stepProgressCircleNode2').className = "w-7 h-7 rounded-full bg-purple-600 text-white font-black flex items-center justify-center text-xs shadow-md";
+            document.getElementById('stepLineConnectorLayout').className = "h-0.5 w-14 bg-purple-600";
+
+            const dropdownSelectReferenceNode = document.getElementById('selectDurationVariantDropdown');
+            const targetedSelectedLabelTextString = dropdownSelectReferenceNode.options[dropdownSelectReferenceNode.selectedIndex].getAttribute('data-term');
+            const individualUnitPriceSum = parseInt(dropdownSelectReferenceNode.value);
+            const calculatedTotalOrderBalanceResult = individualUnitPriceSum * checkoutOperationalActiveQuantityIndexCounter;
+
+            const textMessageBodyPayloadString = `Hello RAHMAN X VAI, I want to deploy a secure system license key packet:\n\n• Product Identity Core: ${currentlySelectedProductDataNodeReference.name}\n• License Term Mode: ${targetedSelectedLabelTextString}\n• Allocated Instances Size: ${checkoutOperationalActiveQuantityIndexCounter} unit(s)\n• Cumulative Net Price Total: ৳${calculatedTotalOrderBalanceResult}\n\nPlease dispatch verification token keys.`;
+            const secureEncodedPayloadString = encodeURIComponent(textMessageBodyPayloadString);
+
+            document.getElementById('intentGatewayLinkWhitelist')?.setAttribute('href', '#'); // safety garbage cleaner collection lines
+            document.getElementById('intentGatewayLinkWhatsapp').href = `${operationalGlobalMemoryStateObject.hyperlinkWhatsapp}?text=${secureEncodedPayloadString}`;
+            document.getElementById('intentGatewayLinkTelegram').href = `${operationalGlobalMemoryStateObject.hyperlinkTelegram}`;
+        }
+
+        function revertToConfigurationStepSection1() {
+            document.getElementById('checkoutStepViewSection1').classList.remove('hidden');
+            document.getElementById('checkoutStepViewSection2').classList.add('hidden');
+            document.getElementById('stepProgressCircleNode2').className = "w-7 h-7 rounded-full bg-slate-900 text-gray-500 font-black flex items-center justify-center text-xs";
+            document.getElementById('stepLineConnectorLayout').className = "h-0.5 w-14 bg-slate-900";
+        }
+
+        function triggerBkashExecutionPaymentAlertToast() {
+            const dropdownSelectReferenceNode = document.getElementById('selectDurationVariantDropdown');
+            const targetBalanceCost = parseInt(dropdownSelectReferenceNode.value) * checkoutOperationalActiveQuantityIndexCounter;
+            alert(`[bKash Central Merchant Route Protocol Connected]\nTotal Billable Payload sum: ৳${targetBalanceCost}\n\nInitializing secure gateway merchant handshake credentials...`);
+        }
+
+
+        // ===================================================
+        // ADMINISTRATIVE CONSOLE MANAGEMENT GATEWAYS 
+        // ===================================================
+        function showGatekeeperModal() {
+            document.getElementById('fieldPasskeyInput').value = '';
+            document.getElementById('authGatekeeperModal').style.display = 'flex';
+        }
+
+        function hideGatekeeperModal() {
+            document.getElementById('authGatekeeperModal').style.display = 'none';
+        }
+
+        function validateSecurityGatekeeperCredentials() {
+            const securityInputValue = document.getElementById('fieldPasskeyInput').value;
+            if(securityInputValue === systemConsoleGatewayProtectionSecurityKeyToken) {
+                hideGatekeeperModal();
+                deployAdminDashboardWorkspacePanel();
+            } else {
+                alert("Security Authorization Exception Fault: Protection Key Token Refused.");
+            }
+        }
+
+        function deployAdminDashboardWorkspacePanel() {
+            document.getElementById('storeView').classList.add('hidden');
+            document.getElementById('adminView').classList.remove('hidden');
+            setTimeout(() => { document.getElementById('adminView').classList.add('opacity-100'); }, 50);
+
+            // Populate forms controls parameter attributes mappings inputs values
+            document.getElementById('cfgStoreName').value = operationalGlobalMemoryStateObject.brandName;
+            document.getElementById('cfgCategory').value = operationalGlobalMemoryStateObject.catalogSectionHeader;
+            document.getElementById('cfgNotice').value = operationalGlobalMemoryStateObject.tickerAnnouncementNotice;
+            document.getElementById('cfgBannerTitle').value = operationalGlobalMemoryStateObject.heroBannerHeaderTitle;
+            document.getElementById('cfgBannerDesc').value = operationalGlobalMemoryStateObject.heroBannerFeatureDesc;
+            
+            document.getElementById('cfgPathResultWhatsapp').value = operationalGlobalMemoryStateObject.hyperlinkWhatsapp;
+            document.getElementById('cfgPathResultTelegram').value = operationalGlobalMemoryStateObject.hyperlinkTelegram;
+            document.getElementById('cfgPathResultTiktok').value = operationalGlobalMemoryStateObject.hyperlinkTiktok;
+            document.getElementById('cfgPathResultFacebook').value = operationalGlobalMemoryStateObject.hyperlinkFacebook;
+
+            compileAdminInventoryTableDataRows();
+        }
+
+        function collapseAdminDashboard() {
+            document.getElementById('adminView').classList.remove('opacity-100');
+            document.getElementById('adminView').classList.add('hidden');
+            document.getElementById('storeView').classList.remove('hidden');
+        }
+
+        // Firebase Firestore Global System Configuration Push Engine
+        async function executeGlobalSystemSettingsPush() {
+            document.getElementById('matrixSystemLoader').classList.remove('opacity-0', 'pointer-events-none');
+            
+            const configurationsDocReferenceObjectPointer = doc(cloudFirestoreDatabaseEngine, "systemControlLayer", "globalConfigs");
+            
+            const updatedFormConfigStateDataPayload = {
+                brandName: document.getElementById('cfgStoreName').value,
+                catalogSectionHeader: document.getElementById('cfgCategory').value,
+                tickerAnnouncementNotice: document.getElementById('cfgNotice').value,
+                heroBannerHeaderTitle: document.getElementById('cfgBannerTitle').value,
+                heroBannerFeatureDesc: document.getElementById('cfgBannerDesc').value,
+                hyperlinkWhatsapp: document.getElementById('cfgPathResultWhatsapp').value,
+                hyperlinkTelegram: document.getElementById('cfgPathResultTelegram').value,
+                hyperlinkTiktok: document.getElementById('cfgPathResultTiktok').value,
+                hyperlinkFacebook: document.getElementById('cfgPathResultFacebook').value
+            };
+
+            try {
+                await setDoc(configurationsDocReferenceObjectPointer, updatedFormConfigStateDataPayload);
+                alert("Core global text configurations successfully written into Firebase Firestore Node!");
+            } catch(transactionExceptionObject) {
+                console.error("Firestore Write Exception Fault:", transactionExceptionObject);
+                alert("Database transactional payload execution exception. Check permissions rules.");
+            } finally {
+                document.getElementById('matrixSystemLoader').classList.add('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        // Firestore Products Collection Mapping Compilation Table Row Output Array
+        function compileAdminInventoryTableDataRows() {
+            const tableBodyDOMNode = document.getElementById('adminInventoryTableRenderBlock');
+            tableBodyDOMNode.innerHTML = '';
+
+            activeTrackedProductItemsArray.forEach((productItemMap, itemLoopIndex) => {
+                tableBodyDOMNode.innerHTML += `
+                    <tr class="border-b border-slate-900 text-gray-300 font-mono">
+                        <td class="py-3 px-2 font-black text-white uppercase text-xs">${productItemMap.name}</td>
+                        <td class="py-3 px-2 text-emerald-400 font-bold">৳${productItemMap.basePrice}</td>
+                        <td class="py-3 px-2 text-purple-400 capitalize text-[11px] font-bold">${productItemMap.theme}</td>
+                        <td class="py-3 px-2 text-right space-x-1">
+                            <button onclick="loadTargetProductInstanceToFormForMutation(${itemLoopIndex})" class="bg-blue-600/10 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-md hover:bg-blue-600 hover:text-white transition cursor-pointer text-[10px] font-black uppercase">Edit</button>
+                            <button onclick="triggerTargetProductInstanceDeletionFromCloud('${productItemMap.firebaseDocumentUniqueKey}')" class="bg-rose-600/10 text-rose-400 border border-rose-500/20 px-3 py-1 rounded-md hover:bg-rose-600 hover:text-white transition cursor-pointer text-[10px] font-black uppercase">Delete</button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        // Add/Edit Dispatch Pipeline execution controls items
+        async function handleItemCommitDispatchPipeline(formEventObject) {
+            formEventObject.preventDefault();
+            document.getElementById('matrixSystemLoader').classList.remove('opacity-0', 'pointer-events-none');
+
+            const trackingHiddenFirebaseIDValue = document.getElementById('formHiddenInstanceFirebaseID').value;
+            const targetCollectionReference = collection(cloudFirestoreDatabaseEngine, "registeredProductsCatalog");
+
+            const structuredDataPayloadObject = {
+                name: document.getElementById('formItemName').value.toUpperCase(),
+                basePrice: parseInt(document.getElementById('formItemPrice').value),
+                desc: document.getElementById('formItemDesc').value,
+                tags: document.getElementById('formItemTags').value,
+                theme: document.getElementById('formItemTheme').value
+            };
+
+            try {
+                if(trackingHiddenFirebaseIDValue === "") {
+                    // Instantiation Command: Firestore collection insertion handler
+                    await addDoc(targetCollectionReference, structuredDataPayloadObject);
+                } else {
+                    // Mutation Command: Firestore specified target document mutation block update
+                    const specifiedDocumentPointerReference = doc(cloudFirestoreDatabaseEngine, "registeredProductsCatalog", trackingHiddenFirebaseIDValue);
+                    await updateDoc(specifiedDocumentPointerReference, structuredDataPayloadObject);
+                }
+                clearCatalogItemProcessingForm();
+            } catch(exceptionLog) {
+                console.error("Firestore Transactional Mutation Exception Track:", exceptionLog);
+                alert("Operation failed. Ensure firestore rules set read/write public allowed.");
+            } finally {
+                document.getElementById('matrixSystemLoader').classList.add('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        function loadTargetProductInstanceToFormForMutation(indexValueKey) {
+            const targetingObjectReference = activeTrackedProductItemsArray[indexValueKey];
+            
+            document.getElementById('formHiddenInstanceFirebaseID').value = targetingObjectReference.firebaseDocumentUniqueKey;
+            document.getElementById('formItemName').value = targetingObjectReference.name;
+            document.getElementById('formItemPrice').value = targetingObjectReference.basePrice;
+            document.getElementById('formItemDesc').value = targetingObjectReference.desc;
+            document.getElementById('formItemTags').value = targetingObjectReference.tags;
+            document.getElementById('formItemTheme').value = targetingObjectReference.theme;
+
+            document.getElementById('formSubmitProcessingButton').innerText = "Update Selected Asset Document Node";
+        }
+
+        async function triggerTargetProductInstanceDeletionFromCloud(uniqueFirebaseDocumentKeyStr) {
+            if(confirm("Confirm system command instruction parameters: permanently wipe this asset data node from Firestore collection array?")) {
+                document.getElementById('matrixSystemLoader').classList.remove('opacity-0', 'pointer-events-none');
+                try {
+                    const documentPointerTarget = doc(cloudFirestoreDatabaseEngine, "registeredProductsCatalog", uniqueFirebaseDocumentKeyStr);
+                    await deleteDoc(documentPointerTarget);
+                } catch(err) {
+                    console.error("Deletion pipeline operation failed:", err);
+                } finally {
+                    document.getElementById('matrixSystemLoader').classList.add('opacity-0', 'pointer-events-none');
+                }
+            }
+        }
+
+        function clearCatalogItemProcessingForm() {
+            document.getElementById('catalogItemProcessingForm').reset();
+            document.getElementById('formHiddenInstanceFirebaseID').value = "";
+            document.getElementById('formSubmitProcessingButton').innerText = "Commit Product To Firestore Array";
+        }
+    </script>
+</body>
+</html>
