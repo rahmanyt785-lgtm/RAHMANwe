@@ -3,102 +3,681 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAHMAN X VAI | DIGITAL EXECUTOR STORE</title>
-    <!-- Tailwind CSS Engine -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome Premium Icons -->
+    <title>RAHMAN X VAI | DIGITAL EXECUTION PANEL MATRIX</title>
+    <!-- Tailwind CSS For Futuristic Dark UI Architecture -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Premium For Vector Icons Matrix -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter Matrix Deployment -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
     <style>
-        body { background-color: #05060f; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .glow-purple { box-shadow: 0 0 40px rgba(147, 51, 234, 0.25); }
-        .glow-emerald { box-shadow: 0 0 40px rgba(16, 185, 129, 0.25); }
-        .glow-amber { box-shadow: 0 0 40px rgba(245, 158, 11, 0.25); }
-        .glow-cyan { box-shadow: 0 0 40px rgba(6, 182, 212, 0.25); }
-        .glow-rose { box-shadow: 0 0 40px rgba(244, 63, 94, 0.25); }
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: #05060f; }
-        ::-webkit-scrollbar-thumb { background: #11132e; border-radius: 10px; }
-        .shimmer-layer {
-            background: linear-gradient(90deg, #090b1e 25%, #16193b 50%, #090b1e 75%);
-            background-size: 200% 100%;
-            animation: loading-shimmer 1.4s infinite linear;
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #02040a;
         }
-        @keyframes loading-shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
+        /* Custom Neon Flowing Glow Keyframe Realization Grid */
+        .glow-purple { box-shadow: 0 0 20px rgba(147, 51, 234, 0.15); border-color: rgba(147, 51, 234, 0.3) !important; }
+        .glow-emerald { box-shadow: 0 0 20px rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3) !important; }
+        .glow-amber { box-shadow: 0 0 20px rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.3) !important; }
+        .glow-cyan { box-shadow: 0 0 20px rgba(6, 182, 212, 0.15); border-color: rgba(6, 182, 212, 0.3) !important; }
+        .glow-rose { box-shadow: 0 0 20px rgba(244, 63, 94, 0.15); border-color: rgba(244, 63, 94, 0.3) !important; }
+        
+        /* Smooth Scrollbar Configuration Structural Interface */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #02040a; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; rounded: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
     </style>
 </head>
-<body class="text-gray-300 min-h-screen flex flex-col justify-between overflow-x-hidden select-none">
+<body class="text-gray-100 min-h-screen relative overflow-x-hidden pb-12">
 
-    <!-- Global Framework Sync Loader Overlay -->
-    <div id="matrixSystemLoader" class="fixed inset-0 bg-[#05060f] z-50 flex flex-col items-center justify-center transition-all duration-700">
-        <div class="relative w-20 h-20 mb-6">
-            <div class="absolute inset-0 border-4 border-purple-600/20 rounded-full"></div>
-            <div class="absolute inset-0 border-4 border-t-purple-500 rounded-full animate-spin"></div>
-            <div class="absolute inset-3 border-4 border-b-cyan-400 rounded-full animate-spin [animation-direction:reverse]"></div>
+    <!-- ========================================== -->
+    <!--     STAGE LAYER 0: GLOBAL SYSTEM LOADER     -->
+    <!-- ========================================== -->
+    <div id="matrixSystemLoader" class="fixed inset-0 bg-[#02040a] z-[9999] flex flex-col items-center justify-center transition-opacity duration-500">
+        <div class="relative w-24 h-24 flex items-center justify-center">
+            <div class="absolute inset-0 border-4 border-purple-500/10 rounded-full"></div>
+            <div class="absolute inset-0 border-4 border-t-purple-600 border-r-cyan-400 rounded-full animate-spin"></div>
         </div>
-        <h2 class="text-white font-black tracking-widest text-xs uppercase animate-pulse">Establishing Firebase Instance Protocol...</h2>
-        <p class="text-[10px] text-gray-600 mt-2 font-mono">SECURE HANDSHAKE V10.14</p>
+        <h2 class="text-sm font-black uppercase tracking-[0.3em] text-white mt-6 animate-pulse">Establishing Firebase Instance Protocol...</h2>
+        <p class="text-[10px] text-gray-600 font-mono mt-2 tracking-widest">SECURE REALTIME STREAM MODE V10.14</p>
     </div>
 
     <!-- ========================================== -->
-    <!--          1. PLATFORM SHOP VIEW COMPONENT   -->
+    <!--         STAGE LAYER 1: STORE FRONT         -->
     <!-- ========================================== -->
-    <div id="storeView" class="w-full transition-all duration-300 opacity-100">
-        <!-- Main Utility Header Area -->
-        <header class="bg-[#090b1e]/90 border-b border-purple-900/30 px-4 py-3.5 flex items-center justify-between sticky top-0 z-40 backdrop-blur-md">
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600/20 to-indigo-600/20 border border-purple-500/30 flex items-center justify-center shadow-lg shadow-purple-500/5">
-                    <i class="fa-solid fa-bolt text-purple-400 text-lg animate-pulse"></i>
+    <main id="storeView" class="max-w-md mx-auto px-4 pt-6">
+        
+        <!-- Header Matrix Layout Block -->
+        <header class="flex items-center justify-between mb-6 bg-[#090b1e]/60 border border-slate-900/80 backdrop-blur-xl p-4 rounded-2xl">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-purple-600/10 border border-purple-500/20 flex items-center justify-center text-purple-400 font-black glow-purple">
+                    <i class="fa-solid fa-bolt text-sm"></i>
                 </div>
                 <div>
-                    <h1 class="text-lg font-black tracking-wider text-white uppercase" id="displayStoreName">RAHMAN X VAI</h1>
-                    <p class="text-[9px] text-purple-400 tracking-widest uppercase font-mono">Premium Hub Architecture</p>
+                    <h1 id="displayStoreName" class="font-black text-sm uppercase tracking-wide text-white">RAHMAN X VAI</h1>
+                    <p class="text-[9px] text-purple-400 font-bold uppercase tracking-widest">Premium Hub Architecture</p>
                 </div>
             </div>
-            <div class="flex items-center space-x-2">
-                <button onclick="showGatekeeperModal()" class="bg-purple-600/10 text-purple-400 border border-purple-500/20 px-3 py-2 rounded-xl hover:bg-purple-600 hover:text-white transition duration-300 flex items-center space-x-1 cursor-pointer">
-                    <i class="fa-solid fa-user-shield text-xs"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-wider hidden sm:inline">Console</span>
-                </button>
-            </div>
+            <!-- Administrative Access Security Gateway Triggers -->
+            <button type="button" onclick="window.showGatekeeperModal()" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-gray-400 hover:text-white transition-colors cursor-pointer">
+                <i class="fa-solid fa-shield-halved text-xs"></i>
+            </button>
         </header>
 
-        <!-- Dynamic Notice Infrastructure Ticker -->
-        <div class="bg-[#03040a] border-b border-slate-900/40 py-2 px-4 overflow-hidden">
-            <div class="max-w-3xl mx-auto flex items-center space-x-3 text-xs">
-                <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded shadow">LIVE</div>
-                <marquee class="text-gray-400 font-medium" id="displayNotice" scrollamount="4">Synchronizing digital assets matrix data maps via cloud registry nodes...</marquee>
+        <!-- Live Ticker Notice Board Node Structure -->
+        <section class="mb-6 bg-[#050714] border border-red-500/10 rounded-xl p-3 flex items-center gap-3 overflow-hidden">
+            <span class="bg-red-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded-md tracking-wider flex items-center gap-1 animate-pulse"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>LIVE</span>
+            <div class="w-full overflow-hidden relative">
+                <div id="displayNotice" class="text-[11px] font-medium text-gray-300 whitespace-nowrap inline-block animate-[marquee_25s_linear_infinite] hover:[animation-play-state:paused]">
+                    Welcome to RAHMAN X VAI Premium Store. Injector parameters updated instantly.
+                </div>
             </div>
+        </section>
+
+        <!-- Dynamic Announcement Banner Module -->
+        <section class="mb-8 relative rounded-3xl overflow-hidden border border-slate-900 bg-gradient-to-br from-[#0c0f2a] to-[#050614] p-6 flex flex-col justify-between min-h-[160px]">
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div>
+                <span class="bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-[8px] font-black uppercase px-2 py-0.5 rounded-md tracking-widest">Matrix Layer Eng Enabled</span>
+                <h2 id="displayBannerTitle" class="text-xl font-black text-white uppercase tracking-wide mt-2 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400">RAHMAN X VAI STORE</h2>
+                <p id="displayBannerDesc" class="text-xs text-gray-400 font-medium mt-1">PREMIUM INJECTOR & GAMING VIP PANELS</p>
+            </div>
+            <div class="flex items-center gap-2 mt-4">
+                <a id="lnkTiktok" href="#" target="_blank" class="w-8 h-8 rounded-lg bg-[#03040a] border border-slate-900 flex items-center justify-center text-gray-500 text-xs hover:text-white hover:border-slate-700 transition-all"><i class="fa-brands fa-tiktok"></i></a>
+                <a id="lnkFacebook" href="#" target="_blank" class="w-8 h-8 rounded-lg bg-[#03040a] border border-slate-900 flex items-center justify-center text-gray-500 text-xs hover:text-white hover:border-slate-700 transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </section>
+
+        <!-- Product Inventory Catalog Stream Pipeline Grid Layout -->
+        <section class="mb-12">
+            <div class="flex items-center justify-between mb-4 px-1">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-purple-400 text-xs"></i>
+                    <h3 id="displayCategory" class="font-black text-xs uppercase tracking-widest text-white">VIP MOD PANELS</h3>
+                </div>
+                <span id="itemCounterLabel" class="text-[10px] font-mono font-bold bg-slate-900 px-3 py-1 border border-slate-800 rounded-full text-gray-400">0 PACKAGES ACTIVE</span>
+            </div>
+            
+            <div id="productsGrid" class="grid grid-cols-1 gap-4">
+                <!-- Realtime dynamic injections mapped by template model compiled compiler -->
+            </div>
+        </section>
+
+        <!-- Contact Framework Secure Node -->
+        <section class="space-y-3 bg-[#050714] border border-slate-900 p-4 rounded-2xl">
+            <div class="flex items-center gap-3 p-3 bg-[#03040a] rounded-xl border border-slate-900/60">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-sm"><i class="fa-solid fa-shield-circle-check"></i></div>
+                <div>
+                    <h4 class="text-[11px] font-bold uppercase text-white">ANTI-BAN BYPASS</h4>
+                    <p class="text-[9px] text-gray-500">Fully optimized execution structures embedded layers.</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-[#03040a] rounded-xl border border-slate-900/60">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-sm"><i class="fa-solid fa-headset"></i></div>
+                    <div>
+                        <h4 class="text-[11px] font-bold uppercase text-white">DIRECT CONTACT</h4>
+                        <p class="text-[9px] text-gray-500">Secure personal operational support availability.</p>
+                    </div>
+                </div>
+                <div class="flex gap-1.5">
+                    <a id="lnkSummaryWhatsapp" href="#" target="_blank" class="w-7 h-7 bg-emerald-600 text-white flex items-center justify-center rounded-md text-xs hover:bg-emerald-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a id="lnkSummaryTelegram" href="#" target="_blank" class="w-7 h-7 bg-sky-600 text-white flex items-center justify-center rounded-md text-xs hover:bg-sky-500 transition-colors"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!--      STAGE LAYER 2: ADMIN CONTROL MATRIX    -->
+    <!-- ========================================== -->
+    <main id="adminView" class="max-w-md mx-auto px-4 pt-6 hidden">
+        <!-- Control Framework Top Control Strip Row Panel Component -->
+        <header class="flex items-center justify-between mb-6 bg-[#0f1126] border border-purple-500/20 p-4 rounded-2xl">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400"><i class="fa-solid fa-network-wired"></i></div>
+                <div>
+                    <h2 class="font-black text-xs uppercase tracking-wider text-white">RAHMAN CORE NODE</h2>
+                    <p class="text-[9px] text-gray-400 uppercase font-mono">DASHBOARD</p>
+                </div>
+            </div>
+            <button type="button" onclick="window.collapseAdminDashboard()" class="bg-red-600/10 text-red-400 border border-red-500/20 font-black text-[10px] px-3 py-1.5 rounded-xl uppercase tracking-wider cursor-pointer hover:bg-red-600 hover:text-white transition-all">
+                <i class="fa-solid fa-power-off mr-1"></i> Disconnect Console
+            </button>
+        </header>
+
+        <!-- Active Database Pipeline Status Ticker Element Node -->
+        <div class="mb-6 p-3 bg-emerald-500/5 border border-emerald-500/20 rounded-xl flex items-center gap-3">
+            <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <p class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider">Firebase Stream Core Socket Pipeline Synchronized Live</p>
         </div>
 
-        <!-- Premium Showcase Hero Layout Matrix -->
-        <div class="p-4 max-w-3xl mx-auto">
-            <div class="w-full rounded-2xl overflow-hidden border border-purple-600/20 glow-purple relative bg-[#090b1e] min-h-44 flex flex-col justify-center items-center text-center p-6">
-                <div class="absolute inset-0 bg-gradient-to-tr from-purple-950/20 via-slate-950/90 to-cyan-950/20 opacity-90"></div>
-                <div class="z-10 space-y-2">
-                    <span class="text-[9px] font-mono tracking-widest text-cyan-400 bg-cyan-950/40 border border-cyan-800/30 px-2 py-0.5 rounded-full uppercase">Matrix Layer Eng Enabled</span>
-                    <h2 class="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 tracking-wide uppercase" id="displayBannerTitle">RAHMAN X VAI STORE</h2>
-                    <p class="text-xs text-purple-300 tracking-widest uppercase max-w-sm mx-auto font-medium" id="displayBannerDesc">PREMIUM INJECTOR & GAMING VIP PANELS</p>
+        <!-- Section A: Global Config Node Entry Structuring Terminal -->
+        <section class="bg-[#090b1e] border border-slate-900 rounded-2xl p-4 mb-6">
+            <h3 class="text-xs font-black uppercase text-emerald-400 tracking-widest mb-4 flex items-center gap-1.5"><i class="fa-solid fa-sliders"></i> Global Engine Parameters Meta Configuration</h3>
+            <div class="space-y-3">
+                <div>
+                    <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Store Brand Title Text</label>
+                    <input type="text" id="cfgStoreName" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                </div>
+                <div>
+                    <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Main Category Display Section Header</label>
+                    <input type="text" id="cfgCategory" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                </div>
+                <div>
+                    <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Live Notice Board Announcement Ticker String</label>
+                    <input type="text" id="cfgNotice" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Hero Promo Big Headline Title</label>
+                        <input type="text" id="cfgBannerTitle" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                    </div>
+                    <div>
+                        <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Hero Banner Specs Subtitle Feature Text</label>
+                        <input type="text" id="cfgBannerDesc" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                    </div>
+                </div>
+                <h4 class="text-[10px] font-black uppercase tracking-widest text-cyan-400 pt-2 border-t border-slate-900 flex items-center gap-1.5"><i class="fa-solid fa-link"></i> Social Hyperlinks Redirection Core Routing Channels</h4>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">WhatsApp URL Target Handle Link</label>
+                        <input type="text" id="cfgPathResultWhatsapp" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                    </div>
+                    <div>
+                        <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Telegram Support Channel Matrix Link</label>
+                        <input type="text" id="cfgPathResultTelegram" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">TikTok Feed Embed Profile URL</label>
+                        <input type="text" id="cfgPathResultTiktok" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                    </div>
+                    <div>
+                        <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Facebook Fan Page Route URL</label>
+                        <input type="text" id="cfgPathResultFacebook" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                    </div>
+                </div>
+                <button type="button" onclick="window.executeGlobalSystemSettingsPush()" class="w-full bg-cyan-600 text-white font-black text-xs uppercase tracking-widest py-3.5 rounded-xl cursor-pointer shadow-lg shadow-cyan-600/10 mt-2 block hover:bg-cyan-500 transition-all">
+                    Push Global Architecture Data Matrix Configuration
+                </button>
+            </div>
+        </section>
+
+        <!-- Section B: Dynamic Operational Asset Registration Registry Database Input Node Form -->
+        <section class="bg-[#090b1e] border border-slate-900 rounded-2xl p-4 mb-6">
+            <h3 class="text-xs font-black uppercase text-purple-400 tracking-widest mb-4 flex items-center gap-1.5"><i class="fa-solid fa-folder-plus"></i> Package Object Engine Registry Database Entry</h3>
+            
+            <form id="catalogItemProcessingForm" onsubmit="return false;">
+                <input type="hidden" id="formHiddenInstanceFirebaseID" value="">
+                <div class="space-y-3">
+                    <div>
+                        <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Product System Blueprint Title Name</label>
+                        <input type="text" id="formItemName" required class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600" placeholder="E.G. RAHMAN AUTO HEADSHOT INJECTOR">
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Base Price Point Index Node (৳)</label>
+                            <input type="number" id="formItemPrice" required class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600" placeholder="250">
+                        </div>
+                        <div>
+                            <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Theme Variant Graphic Neon Element</label>
+                            <select id="formItemTheme" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600">
+                                <option value="purple">Vibrant Purple Cyber Glow</option>
+                                <option value="emerald">Emerald Poison Matrix Green</option>
+                                <option value="amber">Amber Cyberpunk Golden Orange</option>
+                                <option value="cyan">Glitch Ice Crystal Cyan Blue</option>
+                                <option value="rose">Neon Blood Crimson Rose Red</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Short Narrative Specification Description Block</label>
+                        <textarea id="formItemDesc" required class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white h-20 focus:outline-none focus:border-purple-600 resize-none" placeholder="Enter feature metrics summary profile parameters description rows..."></textarea>
+                    </div>
+                    <div>
+                        <label class="text-[9px] text-gray-400 font-black uppercase tracking-wider block mb-1">Feature Metadata Separation Attribute Badges Array (Comma Delimited Strings)</label>
+                        <input type="text" id="formItemTags" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-medium text-white focus:outline-none focus:border-purple-600" placeholder="Auto Aim, Anti-Ban, 64Bit, Safe">
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2">
+                        <button type="button" onclick="window.clearCatalogItemProcessingForm()" class="bg-slate-900 text-gray-400 border border-slate-800 font-black text-xs uppercase tracking-widest py-3.5 rounded-xl cursor-pointer">Clear Form Node</button>
+                        <button type="button" id="formSubmitProcessingButton" onclick="window.submitProductFormViaButtonManual(event)" class="bg-purple-600 text-white font-black text-xs uppercase tracking-widest py-3.5 rounded-xl cursor-pointer shadow-lg shadow-purple-600/10 hover:bg-purple-500 transition-all">Commit Product</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Section C: Active Inventory Matrix Asset Registry Allocation Board -->
+        <section class="bg-[#090b1e] border border-slate-900 rounded-2xl p-4">
+            <h3 class="text-xs font-black uppercase text-amber-400 tracking-widest mb-3 flex items-center gap-1.5"><i class="fa-solid fa-boxes-stacked"></i> Active Registry Inventory Matrix Nodes</h3>
+            <div class="w-full overflow-x-auto">
+                <table class="w-full min-w-[320px]">
+                    <thead>
+                        <tr class="border-b border-slate-900 text-[9px] text-gray-500 font-black uppercase tracking-wider text-left">
+                            <th class="pb-2 px-1">Blueprint Registry Node</th>
+                            <th class="pb-2 px-1">Price Matrix</th>
+                            <th class="pb-2 px-1">Glow Matrix</th>
+                            <th class="pb-2 px-1 text-right">Operations Pipeline</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminInventoryTableRenderBlock">
+                        <!-- Iterative runtime matrix arrays map loop blocks rows -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!--     STAGE LAYER 3: INTERACTIVE MODALS     -->
+    <!-- ========================================== -->
+    
+    <!-- 1. Authentication Authorization Shield Security Gatekeeper Dialog Modal Panel -->
+    <div id="authGatekeeperModal" class="fixed inset-0 z-[999] bg-[#02040a]/80 backdrop-blur-md items-center justify-center hidden p-4">
+        <div class="bg-[#090b1e] border border-slate-900 p-6 rounded-2xl w-full max-w-xs relative glow-purple">
+            <div class="w-12 h-12 rounded-xl bg-purple-600/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-lg mx-auto mb-4"><i class="fa-solid fa-key"></i></div>
+            <h3 class="text-center font-black text-sm uppercase tracking-widest text-white mb-1">Security Authentication</h3>
+            <p class="text-center text-[10px] text-gray-500 mb-4 uppercase tracking-wider font-mono">Console Gateway Protection Protocol</p>
+            <div>
+                <input type="password" id="fieldPasskeyInput" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-mono tracking-widest text-center text-white focus:outline-none focus:border-purple-600 mb-3" placeholder="••••••••">
+                <div class="grid grid-cols-2 gap-2">
+                    <button type="button" onclick="window.hideGatekeeperModal()" class="bg-slate-900 text-gray-400 border border-slate-800 text-[10px] font-black uppercase tracking-widest py-3 rounded-xl cursor-pointer">Abort Node</button>
+                    <button type="button" onclick="window.validateSecurityGatekeeperCredentials()" class="bg-purple-600 text-white text-[10px] font-black uppercase tracking-widest py-3 rounded-xl cursor-pointer shadow-lg shadow-purple-600/20">Verify Key</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Catalog Dynamic Segment View -->
-        <main class="px-4 max-w-3xl mx-auto mt-2">
-            <div class="flex items-center justify-between border-b border-slate-900/60 pb-3 mb-6">
-                <h3 class="text-xs font-black tracking-widest text-purple-400 uppercase flex items-center space-x-2">
-                    <i class="fa-solid fa-layer-group text-xs"></i> 
-                    <span id="displayCategory">VIP MOD PANELS</span>
-                </h3>
-                <span class="text-[10px] text-gray-500 font-mono font-bold uppercase" id="itemCounterLabel">0 Packages Active</span>
+    <!-- 2. Interactive Multi-Step Order Verification Billing Pipeline Modal Component -->
+    <div id="purchaseModal" class="fixed inset-0 z-[999] bg-[#02040a]/80 backdrop-blur-md items-center justify-center hidden p-4">
+        <div class="bg-[#090b1e] border border-slate-900 rounded-3xl w-full max-w-sm overflow-hidden relative">
+            
+            <!-- Structural Pipeline Header Component Block Row Link Layout -->
+            <div class="p-4 bg-[#0c0f2a] border-b border-slate-900/60 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></div>
+                    <span id="chkProductTitle" class="font-black text-xs uppercase tracking-wide text-white">VIP PACK INITIALIZED</span>
+                </div>
+                <button type="button" onclick="window.closeOrderCheckoutModalPopup()" class="text-gray-500 hover:text-white text-xs cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
             </div>
 
-            <!-- Dynamic Product Stream Framework Grid -->
-            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <!-- Fallback Initial Shimmers skeleton outputs -->
-                <div class="shimmer-layer h-60 rounded-2xl border border-slate-900"></div>
+            <!-- Global Pipeline Multi-Step Visual Structural Matrix Progress Counter Strip -->
+            <div class="px-6 pt-4 pb-2 flex items-center justify-center gap-2 bg-[#050614]">
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-full bg-purple-600 text-white font-black flex items-center justify-center text-xs">1</div>
+                    <span class="text-[9px] font-black uppercase tracking-wider text-purple-400">Duration Node</span>
+                </div>
+                <div id="stepLineConnectorLayout" class="h-0.5 w-14 bg-slate-900"></div>
+                <div class="flex items-center gap-2">
+                    <div id="stepProgressCircleNode2" class="w-7 h-7 rounded-full bg-slate-900 text-gray-500 font-black flex items-center justify-center text-xs">2</div>
+                    <span class="text-[9px] font-black uppercase tracking-wider text-gray-500">Gateway Matrix</span>
+                </div>
+            </div>
+
+            <!-- Segment Screen Box View Content Stage Wrapper Node Frame Container -->
+            <div class="p-6">
+                <!-- STEP SEQUENCE A: CONFIGURATION MATRIX VALUE ALLOCATION BLOCK -->
+                <div id="checkoutStepViewSection1" class="space-y-4">
+                    <div>
+                        <label class="text-[9px] text-gray-500 font-black uppercase tracking-wider block mb-1">Select Validation Lifespan Key Duration</label>
+                        <select id="selectDurationVariantDropdown" onchange="window.executeRealTimeCheckoutPriceCalculation()" class="w-full bg-[#03040a] border border-slate-900 rounded-xl p-3 text-xs font-bold text-white focus:outline-none focus:border-purple-600">
+                            <!-- Injected matrix elements fallback map loop rows dynamically -->
+                        </select>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-[#03040a] border border-slate-900 rounded-xl">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-gray-400">Operational License Volume Counter</span>
+                        <div class="flex items-center gap-3">
+                            <button type="button" onclick="window.mutateQuantityAdjustmentCounterValue(-1)" class="w-7 h-7 bg-slate-900 rounded-lg flex items-center justify-center border border-slate-800 text-gray-400 font-black cursor-pointer hover:bg-slate-800">-</button>
+                            <span id="labelQuantityCounterDisplay" class="text-xs font-mono font-black text-white w-4 text-center">1</span>
+                            <button type="button" onclick="window.mutateQuantityAdjustmentCounterValue(1)" class="w-7 h-7 bg-slate-900 rounded-lg flex items-center justify-center border border-slate-800 text-gray-400 font-black cursor-pointer hover:bg-slate-800">+</button>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-900 flex items-center justify-between">
+                        <div>
+                            <span class="text-[9px] text-gray-500 font-black uppercase block tracking-widest">Aggregate Calculated Invoiced Fees</span>
+                            <span id="checkoutCalculatedTotalSumLabel" class="text-xl font-mono font-black text-emerald-400">৳0</span>
+                        </div>
+                        <button type="button" onclick="window.advanceToGatewayStepSection2()" class="bg-purple-600 text-white text-[11px] font-black uppercase tracking-widest px-6 py-3 rounded-xl cursor-pointer shadow-lg shadow-purple-600/20 hover:bg-purple-500 transition-all">Proceed Checkout <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                    </div>
+                </div>
+
+                <!-- STEP SEQUENCE B: DEPLOYMENT INTENT TELEMETRY FOR ROUTING TRANSMISSION LINK GATE -->
+                <div id="checkoutStepViewSection2" class="space-y-4 hidden">
+                    <p class="text-[11px] text-gray-400 text-center leading-relaxed">Select your preferred dynamic checkout gateway interface to submit operational dispatch verification requirements telemetry packets.</p>
+                    
+                    <div class="grid grid-cols-1 gap-2 pt-2">
+                        <a id="intentGatewayLinkWhatsapp" href="#" target="_blank" class="bg-emerald-600 text-white font-black text-xs uppercase tracking-widest p-3.5 rounded-xl flex items-center justify-center gap-2 hover:bg-emerald-500 transition-colors shadow-lg shadow-emerald-600/10">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Transmit Order Via WhatsApp Link
+                        </a>
+                        <a id="intentGatewayLinkTelegram" href="#" target="_blank" class="bg-sky-600 text-white font-black text-xs uppercase tracking-widest p-3.5 rounded-xl flex items-center justify-center gap-2 hover:bg-sky-500 transition-colors shadow-lg shadow-sky-600/10">
+                            <i class="fa-brands fa-telegram text-sm"></i> Routing Dispatch Via Telegram Support
+                        </a>
+                        <button type="button" onclick="window.triggerBkashExecutionPaymentAlertToast()" class="bg-[#e2136e] text-white font-black text-xs uppercase tracking-widest p-3.5 rounded-xl flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-[#e2136e]/10 hover:opacity-90 transition-opacity">
+                            <i class="fa-solid fa-wallet text-sm"></i> Execute Automated bKash API Matrix
+                        </button>
+                    </div>
+                    <div class="pt-2">
+                        <button type="button" onclick="window.revStep()" class="w-full text-center text-[10px] font-black uppercase text-gray-500 tracking-widest hover:text-white transition-colors cursor-pointer"><i class="fa-solid fa-arrow-left mr-1"></i> Retrograde Configuration</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!--    FINAL REALTIME DATABASE INTEGRATION     -->
+    <!-- ========================================== -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+        import { getDatabase, ref, set, onValue, push, remove } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-database.js";
+
+        // আপনার প্রোভাইড করা লেটেস্ট ফায়ারবেস কনফিগারেশন প্যারামিটার মেমোরি ব্লক
+        const firebaseConfig = {
+            apiKey: "AIzaSyD2NL773QjNETNTjsZsdKV9Zty_d5S2UPM",
+            authDomain: "like-sall.firebaseapp.com",
+            databaseURL: "https://like-sall-default-rtdb.firebaseio.com",
+            projectId: "like-sall",
+            storageBucket: "like-sall.firebasestorage.app",
+            messagingSenderId: "646509804289",
+            appId: "1:646509804289:web:ad885096d869f74724b900",
+            measurementId: "G-WQE4J4199Z"
+        };
+
+        // Initialize Firebase Kernel Operations Interface Nodes
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        // Core Volatile Operational Cache Memory States Configuration Objects
+        let operationalGlobalMemoryStateObject = {
+            brandName: "RAHMAN X VAI",
+            catalogSectionHeader: "VIP MOD PANELS",
+            tickerAnnouncementNotice: "Welcome to RAHMAN X VAI Premium Store.",
+            heroBannerHeaderTitle: "RAHMAN X VAI STORE",
+            heroBannerFeatureDesc: "PREMIUM INJECTOR & GAMING VIP PANELS",
+            hyperlinkWhatsapp: "https://wa.me/8801792016636",
+            hyperlinkTelegram: "https://t.me/Rahman532",
+            hyperlinkTiktok: "#",
+            hyperlinkFacebook: "#"
+        };
+
+        let activeTrackedProductItemsArray = [];
+        let currentlySelectedProductDataNodeReference = null;
+        let checkoutOperationalActiveQuantityIndexCounter = 1;
+        const systemConsoleGatewayProtectionSecurityKeyToken = "admin123";
+
+        // Global Execution Mapping Layer Window Fallback Handlers
+        window.showGatekeeperModal = () => { const m = document.getElementById('authGatekeeperModal'); if(m) m.style.display = 'flex'; };
+        window.hideGatekeeperModal = () => { const m = document.getElementById('authGatekeeperModal'); if(m) m.style.display = 'none'; };
+        window.collapseAdminDashboard = () => { document.getElementById('adminView')?.classList.add('hidden'); document.getElementById('storeView')?.classList.remove('hidden'); };
+        window.clearCatalogItemProcessingForm = () => {
+            document.getElementById('catalogItemProcessingForm')?.reset();
+            const h = document.getElementById('formHiddenInstanceFirebaseID'); if(h) h.value = "";
+            const b = document.getElementById('formSubmitProcessingButton'); if(b) b.innerText = "Commit Product";
+        };
+        window.closeOrderCheckoutModalPopup = () => { document.getElementById('purchaseModal').style.display = 'none'; };
+
+        // DOM Initialized Pipeline Stream Setup Event Trigger Hooks
+        window.addEventListener('DOMContentLoaded', () => {
+            // ১. গ্লোবাল কনফিগারেশন রিয়েলটাইম অবজেক্ট ম্যাপিং স্ট্রিমার লুপ
+            onValue(ref(db, "globalConfigs"), (snapshot) => {
+                if(snapshot.exists()) {
+                    operationalGlobalMemoryStateObject = snapshot.val();
+                } else {
+                    set(ref(db, "globalConfigs"), operationalGlobalMemoryStateObject);
+                }
+                synchronizeDOM();
+            });
+
+            // ২. প্রোডাক্ট ইনভেন্টরি ডাইনামিক লাইভ কালেকশন লিসেনার
+            onValue(ref(db, "products"), (snapshot) => {
+                activeTrackedProductItemsArray = [];
+                if(snapshot.exists()) {
+                    const data = snapshot.val();
+                    for(let key in data) {
+                        let item = data[key];
+                        item.firebaseDocumentUniqueKey = key;
+                        activeTrackedProductItemsArray.push(item);
+                    }
+                }
+                compileProducts();
+                
+                // টার্মিনেট এন্ড ক্লোজ গ্লোবাল ইন্টেলিজেন্ট সিস্টেম বুটস্ট্র্যাপ লোডার ইন্টারফেস
+                const l = document.getElementById('matrixSystemLoader');
+                if(l) l.classList.add('opacity-0', 'pointer-events-none');
+            });
+        });
+
+        // Sync Content Structure Matrix Data Rows with Static DOM Elements
+        function synchronizeDOM() {
+            if(document.getElementById('displayStoreName')) document.getElementById('displayStoreName').innerText = operationalGlobalMemoryStateObject.brandName;
+            if(document.getElementById('displayCategory')) document.getElementById('displayCategory').innerText = operationalGlobalMemoryStateObject.catalogSectionHeader;
+            if(document.getElementById('displayNotice')) document.getElementById('displayNotice').innerText = operationalGlobalMemoryStateObject.tickerAnnouncementNotice;
+            if(document.getElementById('displayBannerTitle')) document.getElementById('displayBannerTitle').innerText = operationalGlobalMemoryStateObject.heroBannerHeaderTitle;
+            if(document.getElementById('displayBannerDesc')) document.getElementById('displayBannerDesc').innerText = operationalGlobalMemoryStateObject.heroBannerFeatureDesc;
+            if(document.getElementById('lnkTiktok')) document.getElementById('lnkTiktok').href = operationalGlobalMemoryStateObject.hyperlinkTiktok;
+            if(document.getElementById('lnkFacebook')) document.getElementById('lnkFacebook').href = operationalGlobalMemoryStateObject.hyperlinkFacebook;
+            if(document.getElementById('lnkSummaryWhatsapp')) document.getElementById('lnkSummaryWhatsapp').href = operationalGlobalMemoryStateObject.hyperlinkWhatsapp;
+            if(document.getElementById('lnkSummaryTelegram')) document.getElementById('lnkSummaryTelegram').href = operationalGlobalMemoryStateObject.hyperlinkTelegram;
+        }
+
+        // Render Dynamic Grid UI Elements for Customers Realtime Loop 
+        function compileProducts() {
+            const grid = document.getElementById('productsGrid');
+            if(!grid) return;
+            
+            const counter = document.getElementById('itemCounterLabel');
+            if(counter) counter.innerText = `${activeTrackedProductItemsArray.length} PACKAGES ACTIVE`;
+            
+            grid.innerHTML = '';
+
+            if(activeTrackedProductItemsArray.length === 0) {
+                grid.innerHTML = `<div class="col-span-full text-center py-12 text-xs text-gray-500 font-bold uppercase tracking-widest bg-[#050614] border border-slate-900 rounded-2xl">No Active Packages Loaded Inside Realtime Registry Node</div>`;
+                return;
+            }
+
+            activeTrackedProductItemsArray.forEach((item, idx) => {
+                let themeGlow = "glow-purple", themeText = "text-purple-400", themeBadge = "bg-purple-500/10 text-purple-400 border-purple-500/20";
+                if(item.theme === 'emerald') { themeGlow = "glow-emerald"; themeText = "text-emerald-400"; themeBadge = "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"; }
+                if(item.theme === 'amber') { themeGlow = "glow-amber"; themeText = "text-amber-400"; themeBadge = "bg-amber-500/10 text-amber-400 border-amber-500/20"; }
+                if(item.theme === 'cyan') { themeGlow = "glow-cyan"; themeText = "text-cyan-400"; themeBadge = "bg-cyan-500/10 text-cyan-400 border-cyan-500/20"; }
+                if(item.theme === 'rose') { themeGlow = "glow-rose"; themeText = "text-rose-400"; themeBadge = "bg-rose-500/10 text-rose-400 border-rose-500/20"; }
+
+                let tagsMarkup = item.tags ? item.tags.split(',').map(t => `<span class="bg-[#03040a] border border-slate-900 text-gray-500 text-[8px] px-2 py-0.5 rounded font-bold uppercase">${t.trim()}</span>`).join('') : '';
+
+                grid.innerHTML += `
+                    <div class="bg-[#090b1e] border border-slate-900 rounded-2xl p-4 flex flex-col justify-between hover:${themeGlow} transition-all duration-300">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="${themeText} font-black text-xs uppercase"><i class="fa-solid fa-gamepad mr-1"></i>${item.name}</span>
+                                <span class="text-[8px] font-black border ${themeBadge} px-2 py-0.5 rounded-full">✓ Live Matrix</span>
+                            </div>
+                            <p class="text-[11px] text-gray-400 mb-3">${item.desc}</p>
+                            <div class="flex flex-wrap gap-1 mb-4">${tagsMarkup}</div>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-gray-500 mb-2 font-bold">Price From <span class="text-emerald-400 font-black text-base font-mono">৳${item.basePrice}</span></div>
+                            <div class="grid grid-cols-4 gap-2">
+                                <button type="button" onclick="alert('Asset Deployment Security Layer Matrix Enforced for: ${item.name}')" class="bg-purple-600/10 text-purple-400 border border-purple-500/20 rounded-xl py-2.5 cursor-pointer flex items-center justify-center"><i class="fa-solid fa-circle-info"></i></button>
+                                <button type="button" onclick="window.initializeTargetProductOrderCheckoutSequence(${idx})" class="col-span-3 bg-purple-600 text-white font-black rounded-xl py-2.5 text-xs uppercase tracking-widest cursor-pointer hover:bg-purple-500 transition-all">Buy Configuration</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            if(document.getElementById('adminView') && !document.getElementById('adminView').classList.contains('hidden')) { compileAdminTable(); }
+        }
+
+        // Administrative Authorization Console Operations Passkey Matcher Engine
+        window.validateSecurityGatekeeperCredentials = () => {
+            const i = document.getElementById('fieldPasskeyInput')?.value;
+            if(i === systemConsoleGatewayProtectionSecurityKeyToken) {
+                window.hideGatekeeperModal();
+                document.getElementById('storeView')?.classList.add('hidden');
+                document.getElementById('adminView')?.classList.remove('hidden');
+                
+                if(document.getElementById('cfgStoreName')) document.getElementById('cfgStoreName').value = operationalGlobalMemoryStateObject.brandName;
+                if(document.getElementById('cfgCategory')) document.getElementById('cfgCategory').value = operationalGlobalMemoryStateObject.catalogSectionHeader;
+                if(document.getElementById('cfgNotice')) document.getElementById('cfgNotice').value = operationalGlobalMemoryStateObject.tickerAnnouncementNotice;
+                if(document.getElementById('cfgBannerTitle')) document.getElementById('cfgBannerTitle').value = operationalGlobalMemoryStateObject.heroBannerHeaderTitle;
+                if(document.getElementById('cfgBannerDesc')) document.getElementById('cfgBannerDesc').value = operationalGlobalMemoryStateObject.heroBannerFeatureDesc;
+                if(document.getElementById('cfgPathResultWhatsapp')) document.getElementById('cfgPathResultWhatsapp').value = operationalGlobalMemoryStateObject.hyperlinkWhatsapp;
+                if(document.getElementById('cfgPathResultTelegram')) document.getElementById('cfgPathResultTelegram').value = operationalGlobalMemoryStateObject.hyperlinkTelegram;
+                if(document.getElementById('cfgPathResultTiktok')) document.getElementById('cfgPathResultTiktok').value = operationalGlobalMemoryStateObject.hyperlinkTiktok;
+                if(document.getElementById('cfgPathResultFacebook')) document.getElementById('cfgPathResultFacebook').value = operationalGlobalMemoryStateObject.hyperlinkFacebook;
+                compileAdminTable();
+            } else { alert("Operational Security Abort: Invalid Authorization Gatekeeper Token!"); }
+        };
+
+        // Dispatches Operational Engine Layout Parameters Configurations to Realtime Cluster
+        window.executeGlobalSystemSettingsPush = async () => {
+            try {
+                const payload = {
+                    brandName: document.getElementById('cfgStoreName')?.value || "RAHMAN X VAI",
+                    catalogSectionHeader: document.getElementById('cfgCategory')?.value || "VIP MOD PANELS",
+                    tickerAnnouncementNotice: document.getElementById('cfgNotice')?.value || "",
+                    heroBannerHeaderTitle: document.getElementById('cfgBannerTitle')?.value || "",
+                    heroBannerFeatureDesc: document.getElementById('cfgBannerDesc')?.value || "",
+                    hyperlinkWhatsapp: document.getElementById('cfgPathResultWhatsapp')?.value || "#",
+                    hyperlinkTelegram: document.getElementById('cfgPathResultTelegram')?.value || "#",
+                    hyperlinkTiktok: document.getElementById('cfgPathResultTiktok')?.value || "#",
+                    hyperlinkFacebook: document.getElementById('cfgPathResultFacebook')?.value || "#"
+                };
+                await set(ref(db, "globalConfigs"), payload);
+                alert("Global Engine Parameter Nodes Dispatched & Synchronized Live!");
+            } catch(e) { alert("Pipeline Failure Critical Socket Refusal: " + e.message); }
+        };
+
+        // Dynamic Product Package Structuring Core Array Database Push Allocation Engine
+        window.handleItemCommitDispatchPipeline = async (e) => {
+            if(e && e.preventDefault) e.preventDefault();
+            try {
+                const id = document.getElementById('formHiddenInstanceFirebaseID')?.value || "";
+                const payload = {
+                    name: (document.getElementById('formItemName')?.value || "UNNAMED CORE PACK").toUpperCase(),
+                    basePrice: parseInt(document.getElementById('formItemPrice')?.value || "0"),
+                    desc: document.getElementById('formItemDesc')?.value || "",
+                    tags: document.getElementById('formItemTags')?.value || "",
+                    theme: document.getElementById('formItemTheme')?.value || "purple"
+                };
+                if(id === "") {
+                    await push(ref(db, "products"), payload);
+                } else {
+                    await set(ref(db, `products/${id}`), payload);
+                }
+                window.clearCatalogItemProcessingForm();
+                alert("Inventory Asset Synchronization Database Commitment Completed!");
+            } catch(err) { alert("Asset Pipeline Disruption Error: " + err.message); }
+        };
+
+        // Manual Submissions Wrapper Interface to Bypass Default Form Page Rotations
+        window.submitProductFormViaButtonManual = (e) => {
+            window.handleItemCommitDispatchPipeline(e);
+        };
+
+        // Compile Dashboard Table Layout Realtime Structuring Engine Matrix Loops
+        function compileAdminTable() {
+            const tbody = document.getElementById('adminInventoryTableRenderBlock');
+            if(!tbody) return;
+            tbody.innerHTML = '';
+            activeTrackedProductItemsArray.forEach((item, i) => {
+                tbody.innerHTML += `
+                    <tr class="border-b border-slate-900 text-gray-300 font-mono text-xs hover:bg-[#03040a]/40 transition-colors">
+                        <td class="py-3 px-2 font-black text-white">${item.name}</td>
+                        <td class="py-3 px-2 text-emerald-400 font-bold">৳${item.basePrice}</td>
+                        <td class="py-3 px-2 text-purple-400 font-bold capitalize">${item.theme}</td>
+                        <td class="py-3 px-2 text-right space-x-1">
+                            <button type="button" onclick="window.loadEdit('${item.firebaseDocumentUniqueKey}', ${i})" class="bg-blue-600/20 text-blue-400 border border-blue-500/10 px-2.5 py-1 rounded-lg cursor-pointer font-bold hover:bg-blue-600 hover:text-white transition-all">Edit</button>
+                            <button type="button" onclick="window.deleteItem('${item.firebaseDocumentUniqueKey}')" class="bg-rose-600/20 text-rose-400 border border-rose-500/10 px-2.5 py-1 rounded-lg cursor-pointer font-bold hover:bg-rose-600 hover:text-white transition-all">Wipe</button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        window.loadEdit = (id, i) => {
+            const item = activeTrackedProductItemsArray[i];
+            if(!item) return;
+            if(document.getElementById('formHiddenInstanceFirebaseID')) document.getElementById('formHiddenInstanceFirebaseID').value = id;
+            if(document.getElementById('formItemName')) document.getElementById('formItemName').value = item.name;
+            if(document.getElementById('formItemPrice')) document.getElementById('formItemPrice').value = item.basePrice;
+            if(document.getElementById('formItemDesc')) document.getElementById('formItemDesc').value = item.desc;
+            if(document.getElementById('formItemTags')) document.getElementById('formItemTags').value = item.tags;
+            if(document.getElementById('formItemTheme')) document.getElementById('formItemTheme').value = item.theme;
+            if(document.getElementById('formSubmitProcessingButton')) document.getElementById('formSubmitProcessingButton').innerText = "Update Product Node";
+        };
+
+        window.deleteItem = async (id) => {
+            if(confirm("Confirm destructive erasure command targeting unique database entry node?")) { 
+                await remove(ref(db, `products/${id}`)); 
+            }
+        };
+
+        // Multi-Step Multi-Tier Dynamic Checkout Validation Module Algorithms 
+        window.initializeTargetProductOrderCheckoutSequence = (idx) => {
+            currentlySelectedProductDataNodeReference = activeTrackedProductItemsArray[idx];
+            checkoutOperationalActiveQuantityIndexCounter = 1;
+            document.getElementById('chkProductTitle').innerText = currentlySelectedProductDataNodeReference.name;
+            document.getElementById('labelQuantityCounterDisplay').innerText = checkoutOperationalActiveQuantityIndexCounter;
+            
+            const b = currentlySelectedProductDataNodeReference.basePrice;
+            document.getElementById('selectDurationVariantDropdown').innerHTML = `
+                <option value="${b}" data-term="1 DAY LICENSED KEY" selected>1 DAY ACCESS TIER — ৳${b}</option>
+                <option value="${Math.round(b * 2.8)}" data-term="3 DAYS REPO KEY">3 DAYS STANDARD TERM — ৳${Math.round(b * 2.8)}</option>
+                <option value="${Math.round(b * 5.5)}" data-term="7 DAYS VIP CORE KEY">7 DAYS ADVANCED STACK — ৳${Math.round(b * 5.5)}</option>
+                <option value="${Math.round(b * 18)}" data-term="30 DAYS ULTIMATE MATRIX">30 DAYS UNLIMITED PLATINUM — ৳${Math.round(b * 18)}</option>
+            `;
+            window.calcPrice();
+            document.getElementById('purchaseModal').style.display = 'flex';
+            window.revStep();
+        };
+
+        window.mutateQuantityAdjustmentCounterValue = (v) => { 
+            checkoutOperationalActiveQuantityIndexCounter += v; 
+            if(checkoutOperationalActiveQuantityIndexCounter < 1) checkoutOperationalActiveQuantityIndexCounter = 1; 
+            document.getElementById('labelQuantityCounterDisplay').innerText = checkoutOperationalActiveQuantityIndexCounter; 
+            window.calcPrice(); 
+        };
+        
+        window.calcPrice = () => { 
+            const s = parseInt(document.getElementById('selectDurationVariantDropdown').value); 
+            document.getElementById('checkoutCalculatedTotalSumLabel').innerText = "৳" + (s * checkoutOperationalActiveQuantityIndexCounter); 
+        };
+        
+        window.executeRealTimeCheckoutPriceCalculation = () => window.calcPrice();
+
+        window.advanceToGatewayStepSection2 = () => {
+            document.getElementById('checkoutStepViewSection1').classList.add('hidden');
+            document.getElementById('checkoutStepViewSection2').classList.remove('hidden');
+            document.getElementById('stepProgressCircleNode2').className = "w-7 h-7 rounded-full bg-purple-600 text-white font-black flex items-center justify-center text-xs shadow-md shadow-purple-600/30";
+            document.getElementById('stepLineConnectorLayout').className = "h-0.5 w-14 bg-purple-600";
+            
+            const sNode = document.getElementById('selectDurationVariantDropdown');
+            const term = sNode.options[sNode.selectedIndex].getAttribute('data-term');
+            const total = parseInt(sNode.value) * checkoutOperationalActiveQuantityIndexCounter;
+            
+            const msg = `Hello ${operationalGlobalMemoryStateObject.brandName},\n\nI wish to secure access registration mapping:\n• Asset Component: ${currentlySelectedProductDataNodeReference.name}\n• Validation Lifespan: ${term}\n• Volume Quantity: ${checkoutOperationalActiveQuantityIndexCounter}\n• Total Calculated Invoiced Fee: ৳${total}\n\nProvide verification deposit routing parameters data sheet.`;
+            document.getElementById('intentGatewayLinkWhitespace')?.setAttribute('href', `${operationalGlobalMemoryStateObject.hyperlinkWhatsapp}?text=${encodeURIComponent(msg)}`);
+            document.getElementById('intentGatewayLinkWhatsapp').href = `${operationalGlobalMemoryStateObject.hyperlinkWhatsapp}?text=${encodeURIComponent(msg)}`;
+            document.getElementById('intentGatewayLinkTelegram').href = operationalGlobalMemoryStateObject.hyperlinkTelegram;
+        };
+
+        window.revStep = () => {
+            document.getElementById('checkoutStepViewSection1').classList.remove('hidden');
+            document.getElementById('checkoutStepViewSection2').classList.add('hidden');
+            document.getElementById('stepProgressCircleNode2').className = "w-7 h-7 rounded-full bg-slate-900 text-gray-500 font-black flex items-center justify-center text-xs";
+            document.getElementById('stepLineConnectorLayout').className = "h-0.5 w-14 bg-slate-900";
+        };
+
+        window.triggerBkashExecutionPaymentAlertToast = () => { alert("bKash Processing Warning:\n\nSandbox Secure Handshake Endpoint Matrix initialization complete. Manual deposit submission processing required via WhatsApp channels for immediate key packet generation acceleration triggers."); };
+    </script>
+</body>
+</html>
                 <div class="shimmer-layer h-60 rounded-2xl border border-slate-900"></div>
             </div>
 
